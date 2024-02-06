@@ -1,0 +1,23 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #343a40; /* Dark grey background color */
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    color: #fff; /* White text color */
+  }
+  
+  .navbar-toggler-icon {
+    color: #fff; /* White color for the toggler icon */
+  }
+  
+  .nav-link {
+    color: #fff; /* White text color for links */
+  }
+  
+  .nav-link:hover {
+    color: #fff; /* White text color on hover */
+  }
+  
