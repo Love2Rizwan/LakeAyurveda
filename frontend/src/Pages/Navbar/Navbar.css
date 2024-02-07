@@ -14,10 +14,20 @@
   }
   
   .nav-link {
-    color: #fff; /* White text color for links */
+    color: #000000; /* White text color for links */
+    font-size: 23px;
+    margin: 0px 4px;
   }
   
   .nav-link:hover {
     color: #fff; /* White text color on hover */
   }
+  img{
+    width: 6rem;
+    height: 4rem;
+    margin-left: 2rem;
+    /* background-color: white; */
+  }
+
+
   

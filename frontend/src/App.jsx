@@ -4,9 +4,10 @@ import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Navbar from "./Pages/Navbar/Navbar";
 import Home from "./Pages/Home/Home"; // Correct import path
-import AddBlog from "./Components/AddBlog/AddBlog";
-import BlogDetails from "./Components/BlogDetails/BlogDetails";
-import Banner from "./Pages/Banner/Banner";
+import Service from "./Pages/Service/Service";
+import Feedback from "./Pages/Feedback/Feedback";
+import Contact from "./Pages/Contact/Contact";
+import About from "./Pages/About/About";
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/react-blog" element={<Home />} />
-          <Route path="/react-banner" element={<Banner />} /> {/* Corrected the path */}
-          <Route path="/blogs/add" element={<AddBlog />} />
-          <Route path="/blogs/:id" element={<BlogDetails />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/feedback" element={<Feedback />} /> {/* Corrected the path */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>
