@@ -5,8 +5,12 @@
   }
   
   .navbar-brand {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     color: #fff; /* White text color */
+  }
+
+  .container-fluid{
+    height: 3rem;
   }
   
   .navbar-toggler-icon {
@@ -15,7 +19,7 @@
   
   .nav-link {
     color: #000000; /* White text color for links */
-    font-size: 23px;
+    font-size: 19px;
     margin: 0px 4px;
   }
   
@@ -23,8 +27,8 @@
     color: #fff; /* White text color on hover */
   }
   img{
-    width: 6rem;
-    height: 4rem;
+    width: 4rem;
+    height: 3rem;
     margin-left: 2rem;
     /* background-color: white; */
   }

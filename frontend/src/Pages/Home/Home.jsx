@@ -1,64 +1,70 @@
-import { useState, useEffect } from "react";
-import axios from "axios"; // Import Axios
+import React, { useEffect } from "react";
+import Hero from "../Hero/Hero";
+import CardComponent from "../../Components/Card/CardComponent";
 
 const Home = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [blogs, setBlogs] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchCategory, setSearchCategory] = useState("None");
-  const [searchResults, setSearchResults] = useState([]);
-  const [searchArray, setSearchArray] = useState([]);
-
-  // useEffect(() => {
-  //   axios.get("http://localhost:8000/blogs")
-  //     .then(response => {
-  //       setBlogs(response.data);
-  //       setIsLoading(false);
-  //     })
-  //     .catch(error => {
-  //       setError(error);
-  //       setIsLoading(false);
-  //     });
-  // }, []);
-
-  // const categoryHandler = (searchCategory) => {
-  //   setSearchCategory(searchCategory);
-
-  //   if (searchCategory !== "None") {
-  //     const newBlogList = blogs.filter(
-  //       (blog) => blog.category.toLowerCase() === searchCategory.toLowerCase()
-  //     );
-  //     setSearchArray(newBlogList);
-  //     setSearchResults(newBlogList);
-  //   } else {
-  //     setSearchArray(blogs);
-  //     setSearchResults(blogs);
-  //   }
-  // };
-
-  // const searchHandler = (searchTerm) => {
-  //   setSearchTerm(searchTerm);
-
-  //   if (searchTerm !== "") {
-  //     const newBlogList = searchArray.filter((blog) => {
-  //       return Object.values(blog)
-  //         .join(" ")
-  //         .toLowerCase()
-  //         .includes(searchTerm.toLowerCase());
-  //     });
-  //     setSearchResults(newBlogList);
-  //   } else {
-  //     setSearchResults(blogs);
-  //   }
-  // };
-
-  // if (error) return <div>{error.message}</div>;
-  // if (isLoading) return <div>Loading...</div>;
+  var card = [
+    {
+      image: "image1.jpg",
+      title: "Item 1",
+      description: "Description of Item 1",
+    },
+    {
+      image: "image2.jpg",
+      title: "Item 2",
+      description: "Description of Item 2",
+    },
+    {
+      image: "image3.jpg",
+      title: "Item 3",
+      description: "Description of Item 3",
+    },
+    {
+      image: "image4.jpg",
+      title: "Item 4",
+      description: "Description of Item 4",
+    },
+    {
+      image: "image5.jpg",
+      title: "Item 5",
+      description: "Description of Item 5",
+    },
+    {
+      image: "image6.jpg",
+      title: "Item 6",
+      description: "Description of Item 6",
+    },
+    {
+      image: "image7.jpg",
+      title: "Item 7",
+      description: "Description of Item 7",
+    },
+    {
+      image: "image8.jpg",
+      title: "Item 8",
+      description: "Description of Item 8",
+    },
+    {
+      image: "image9.jpg",
+      title: "Item 9",
+      description: "Description of Item 9",
+    },
+    {
+      image: "image10.jpg",
+      title: "Item 10",
+      description: "Description of Item 10",
+    },
+  ];
 
   return (
     <div>
-     
+      <Hero />
+      <div className="container m-5">
+        {card.map((data) => {
+          return <CardComponent key={data.title} cardData={data} />;
+        })}
+        {/* <CardComponent /> */}
+      </div>
     </div>
   );
 };
