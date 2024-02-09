@@ -21,7 +21,7 @@ const images = [
   {
     label: "Parfect Man Kit",
     imgPath:
-      "/public/images/PerfectMenCombo.jpg",
+      "/public/images/Perfect_Men_Mini_Booster-removebg-preview.png",
   },
   {
     label: "Bali, Indonesia",
@@ -31,7 +31,7 @@ const images = [
   {
     label: "Goč, Serbia",
     imgPath:
-      "/public/images/WhatsApp Image 2023-06-11 at 11.42.58 AM (2).jpeg",
+      "/public/images/WhatsApp_Image_2023-06-11_at_11.42.58_AM__2_-removebg-preview.png",
   },
 ];
 

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Hero from "../Hero/Hero";
 import CardComponent from "../../Components/Card/CardComponent";
+import '../../Components/Card/Cardomponent.css'
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   var card = [
@@ -57,14 +59,15 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <div className="d-flex flex-column">
       <Hero />
-      <div className="container m-5">
+      <div className="container parentCard">
         {card.map((data) => {
           return <CardComponent key={data.title} cardData={data} />;
         })}
         {/* <CardComponent /> */}
       </div>
+      <Footer />
     </div>
   );
 };
